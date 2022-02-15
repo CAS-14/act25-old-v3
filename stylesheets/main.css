@@ -68,7 +68,9 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	vertical-align: baseline;
-  font-family: barlow;
+  font-family: arial;
+  font-weight: bold;
+  font-style: italic;
 }
 
 html {
