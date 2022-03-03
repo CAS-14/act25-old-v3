@@ -68,8 +68,8 @@ footer, header, hgroup, menu, nav, section {
   margin-right: auto;
   background-color:black;
   background-size: 100%;
-  border-width: 5px;
-  border-color: var(--accent);
+  border: solid var(--accent);
+  border-width: 4px;
 }
 
 /* box with hexagons */
