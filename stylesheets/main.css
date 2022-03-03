@@ -33,10 +33,13 @@ html {
 /* FIRST bgcolor: #d0f3ff */
 
 /* specific defaults */
+p {
+  color: var(--accent)
+}
+
 a {
-  color: blue;
+  color: var(--accent);
   vertical-align: baseline;
-  font-family: barlow;
 }
 
 body {
