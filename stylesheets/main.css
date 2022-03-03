@@ -18,8 +18,8 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	vertical-align: baseline;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+  font-family: monospace, monospace;
+  font-weight: 500;
   font-style: normal;
   color: var(--accent)
 }
@@ -70,7 +70,7 @@ footer, header, hgroup, menu, nav, section {
   background-color: rgba(0, 0, 0, 0.65);
   background-size: 100%;
   border: solid var(--accent);
-  border-width: 4px;
+  border-width: 2px;
 }
 
 /* box with hexagons */
