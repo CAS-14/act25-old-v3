@@ -44,7 +44,8 @@ a {
 }
 
 body {
-  background-image: "/images/omori-space.png";
+  background-color: black;
+  background-image: url("/images/omori-space.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
