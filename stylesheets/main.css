@@ -19,9 +19,12 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	vertical-align: baseline;
   font-family: monospace, monospace;
+  color: var(--accent)
+}
+
+a, p {
   font-weight: 500;
   font-style: normal;
-  color: var(--accent)
 }
 
 html {
