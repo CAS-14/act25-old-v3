@@ -47,9 +47,14 @@ a {
 }
 
 body {
-  background-color: black;
-  background-image: url("/images/omori-space.png");
-  background-repeat: no-repeat;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/images/omori-space.png"),
+    no-repeat;
+  
   background-size: cover;
 }
 
@@ -70,7 +75,7 @@ footer, header, hgroup, menu, nav, section {
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.8);
   background-size: 100%;
   border: solid var(--accent);
   border-width: 2px;
