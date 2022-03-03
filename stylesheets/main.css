@@ -21,6 +21,7 @@ time, mark, audio, video {
   font-family: arial;
   font-weight: bold;
   font-style: italic;
+  color: var(--accent)
 }
 
 html {
@@ -43,7 +44,7 @@ a {
 }
 
 body {
-  background-image: "images/omori-space.png";
+  background-image: "/images/omori-space.png";
   background-repeat: no-repeat;
   background-size: cover;
 }
