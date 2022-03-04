@@ -4,16 +4,16 @@
   <title>ACT25</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <link rel="stylesheet" href="index.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
   <script>
-    $(document).ready(function () {
-      // Handler for .ready() called.
-      $('html, body').animate({
-          scrollTop: $('#home').offset().top
-      }, 'slow');
-    });
+    function select(a) {
+      items = document.querySelectorAll('.single.active');
+      if(items.length) {
+        items[0].className = 'single';
+      }
+      a.className = 'single active';
+    }
   </script>
+ 
 </head>
 <!-- Random background color is disabled for load time reasons. See /randomcolor.txt -->
 <body class="no-scroll">
@@ -25,10 +25,10 @@
     <h2 style="margin-top: 0px;">a CAS project</h2>
 
     <div class="topnav">
-      <a class="active" href="#home">home</a>
-      <a href="#about">about me</a>
-      <a href="#projects">projects</a>
-      <a href="#three">three</a>
+      <a href="#home" onclick="select(this)" class="single active">home</a>
+      <a href="#about" onclick="select(this)" class="single">about me</a>
+      <a href="#projects" onclick="select(this)" class="single">projects</a>
+      <a href="#three" onclick="select(this)" class="single">three</a>
     </div>
 
     <div class="pages no-scroll" style="height:70vh">
