@@ -64,8 +64,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-.no-scroll{
+.no-scroll {
   overflow-y: hidden;
+}
+
+.scroll-override {
+  overflow-y: scroll;
 }
 
 .page {
