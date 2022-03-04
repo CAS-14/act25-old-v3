@@ -26,6 +26,20 @@
     margin-bottom: 0px;
   }
 
+  .container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  } 
+
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
 /*
   .links-main {
     color: #00755a;
@@ -42,8 +56,8 @@
   </style>
 </head>
 <!-- Random background color is disabled for load time reasons. See /randomcolor.txt -->
-<body>
-  <div class="box">
+<body class="container">
+  <div class="box vertical-center">
     <div class="headbox">
       <span style="font-size: 64px; margin-right: 20px;"><b>ACT25</b></span>
       <img src=images/act25logotriangle.png width=72 height=72>
@@ -89,10 +103,8 @@
     </div>
     -->
   </div>
-  <footer class="txt" style="margin-top: 120px;">
-    <!-- Background image was removed: -->
-    <!-- <a href="https://www.freepik.com/vectors/background" target="_blank">Background vector created by starline - www.freepik.com</a> -->
+  <!-- <footer class="txt" style="margin-top: 120px;">
     <iframe src="copyright.html" width=100% height=60px frameBorder="0"><a href="/copyright.html">Click to view copyright message</a></iframe>
-  </footer>
+  </footer> -->
 </body>
 </html>
