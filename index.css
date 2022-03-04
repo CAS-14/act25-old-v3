@@ -68,6 +68,14 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+.no-scroll{
+  overflow-y: hidden;
+}
+
+.page {
+  margin-bottom: 120vh;
+}
+
 /* box with stuff */
 .box {
   width: 600px;
