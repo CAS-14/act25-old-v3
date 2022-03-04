@@ -26,19 +26,29 @@
     margin-bottom: 0px;
   }
 
-/*
-  .links-main {
-    color: #00755a;
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
   }
 
-  .links-fun {
-    color: dodgerblue;
+  .topnav a {
+    float: left;
+    color: var(--accent);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
   }
 
-  .links-technical {
-    color: blueviolet;
+  .topnav a:hover {
+    background-color: white;
+    color: black;
   }
-*/
+
+  .topnav a.active {
+    background-color: var(--accent);
+    color: black;
+  }
   </style>
 </head>
 <!-- Random background color is disabled for load time reasons. See /randomcolor.txt -->
@@ -48,8 +58,15 @@
       <span style="font-size: 64px; margin-right: 20px;"><b>ACT25</b></span>
       <img src=images/act25logotriangle.png width=72 height=72>
     </div>
-
     <h2 style="margin-top: 0px;">a CAS project</h2>
+
+    <div class="topnav">
+      <a class="active" href="#home">home</a>
+      <a href="#about">about me</a>
+      <a href="#projects">projects</a>
+      <a href="#three">three</a>
+    </div>
+
     <p>Welcome to ACT25! This is a site made by CAS. Currently it is in its beta phase, so there isn't much here.</p>
     <p>Warning: This website is still under development. Links can change!</p>
     <p class="mobiletext">HELLO WORLD (this text should be invisible!)</p>
