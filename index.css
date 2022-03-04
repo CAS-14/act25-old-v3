@@ -25,6 +25,13 @@ time, mark, audio, video {
 a, p {
   font-weight: 500;
   font-style: normal;
+  color: var(--c, --accent, white);
+  vertical-align: baseline;
+}
+
+a:hover {
+  background-color: var(--accent);
+  color: black;
 }
 
 html {
@@ -33,17 +40,6 @@ html {
 
 :root {
   --accent: #ff64ff;
-}
-/* FIRST bgcolor: #d0f3ff */
-
-/* specific defaults */
-p {
-  color: var(--accent)
-}
-
-a {
-  color: var(--accent);
-  vertical-align: baseline;
 }
 
 body {
@@ -74,6 +70,40 @@ footer, header, hgroup, menu, nav, section {
 
 .page {
   margin-bottom: 120vh;
+}
+
+
+.headbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  flex-basis: 0px;
+  flex-grow: 1;
+  color: var(--accent);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: var(--accent);
+  color: black;
 }
 
 /* box with stuff */
