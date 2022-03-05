@@ -22,7 +22,7 @@ time, mark, audio, video {
   color: var(--accent)
 }
 
-a, p {
+a, p, span {
   font-weight: 500;
   font-style: normal;
   color: var(--c, --accent, white);
