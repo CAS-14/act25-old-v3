@@ -69,7 +69,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .scroll-override {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .page {
