@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACT25 - poetry</title>
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+  <link rel="stylesheet" href="/main.css">
+  <script src="/main.js"></script>
+  <script src="poetry.js"></script>
+</head>
+<body class="no-scroll">
+  <div class="box" style="margin-top:40px; height:90vh">
+    <div class="headbox">
+      <span style="font-size: 64px; margin-right: 20px;"><b>ACT25</b></span>
+      <img src=/images/act25logotriangle.png width=72 height=72>
+    </div>
+    <h2 style="margin-top: 0px;">a CAS project</h2>
+
+    <div class="topnav">
+      <a href="/creations/poetry" onclick="select(this)" class="single">back to poems</a>
+    </div>
+
+    <div id="poem">
+      project feverdream:01
+      by cas
+      
+      heat
+      rolling off everything
+      it's not real
+      
+      lost sense of time
+      lost sense of space
+      lost sense of reality
+      
+      warmth
+      something isn't right
+      it's not real
+      
+      waking, sleeping
+      sleeping, waking
+      fever dream.
+      
+      "oh i hit enter too early but i guess it's done"
+    </div>
+  </div>
+  <!-- <footer class="txt" style="margin-top: 120px;">
+    <iframe src="copyright.html" width=100% height=60px frameBorder="0"><a href="/copyright.html">Click to view copyright message</a></iframe>
+  </footer> -->
+</body>
+</html>
