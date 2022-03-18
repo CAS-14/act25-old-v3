@@ -132,17 +132,17 @@ footer, header, hgroup, menu, nav, section {
   border-width: 2px;
 }
 
-/* box with hexagons */
-.bgbox {
-  width: 600px;
+.boxmsg {
+  width: 400px;
   padding: 15px;
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("/images/hexa-background.jpg");
-  background-color:white;
+  background-color: rgba(0, 0, 0, 0.65);
   background-size: 100%;
-  border-radius: 25px;
+  border: solid var(--accent);
+  border-width: 2px;
+  align-items: center;
 }
 
 /* centered text */
