@@ -11,6 +11,7 @@
     var blocks = [""] // test
 
     function getIP(json) {
+      console.log("your ip address is "+json.ip)
       if (json.ip in blocks) {
       alert("Blocked  -> Go play with Google");
           window.location.replace("https://www.google.com");
