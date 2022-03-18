@@ -5,19 +5,6 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <link rel="stylesheet" href="main.css">
   <script src="main.js"></script>
-
-  
-  <script type="application/javascript">
-    var blocks = [""] // test
-
-    function getIP(json) {
-      console.log("your ip address is "+json.ip)
-      if (json.ip in blocks) {
-      alert("Blocked  -> Go play with Google");
-          window.location.replace("https://www.google.com");
-      }
-    }
-  </script>
   <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
 <body class="no-scroll">

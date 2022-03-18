@@ -5,3 +5,13 @@ function select(a) {
     }
     a.className = 'single active';
 }
+
+var ipBlocks = [""] // test
+
+function getIP(json) {
+  console.log("your ip address is "+json.ip)
+  if (json.ip in ipBlocks) {
+  alert("error 403. goodbye.");
+      window.location.replace("https://www.google.com");
+  }
+}
