@@ -57,7 +57,7 @@ body {
       rgba(0, 0, 0, 0.4), 
       rgba(0, 0, 0, 0.4)
     ),
-    url("/images/omori-space.png"),
+    url("/images/backgrounds/omori-space.png"),
     no-repeat;
   
   background-size: cover;
