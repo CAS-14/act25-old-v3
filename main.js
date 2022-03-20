@@ -51,6 +51,7 @@ function setTheme(theme) { // sets document theme to argument
     "dark": "#dddddd",
   }
 
-  document.querySelector(":root").style.setProperty("--accent", colors[theme])
-  document.body.style.backgroundImage = "url('/images/backgrounds/omori-"+theme+".png')";
+  rs = document.querySelector(":root").style
+  rs.setProperty("--accent", colors[theme])
+  rs.setProperty("--background", "url('/images/backgrounds/omori-"+theme+".png')")
 }
