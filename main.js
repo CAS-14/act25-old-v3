@@ -39,7 +39,6 @@ function changeTheme() { // runs when theme is selected
   localStorage.setItem("theme", selected); // set selected theme for storage
 
   setTheme(selected); // sets theme to selected theme
-  alert("Theme is now set to " + selected); // debug
 }
 
 function setTheme(theme) { // sets document theme to argument
