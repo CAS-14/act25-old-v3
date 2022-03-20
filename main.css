@@ -132,6 +132,12 @@ footer, header, hgroup, menu, nav, section {
   border-width: 2px;
 }
 
+.box .bottom span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .boxmsg {
   width: 400px;
   padding: 15px;
