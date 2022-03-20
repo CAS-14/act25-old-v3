@@ -53,6 +53,7 @@ function setTheme(theme) { // sets document theme to argument
     "firecity": "#f96412",
     "water": "#b7cde5",
     "dark": "#dddddd",
+    "faraway": "#bbd93f",
   }
 
   rs = document.querySelector(":root").style
