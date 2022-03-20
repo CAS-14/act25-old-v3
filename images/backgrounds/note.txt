@@ -1,0 +1,6 @@
+note to self
+
+to add new backgrounds:
+1. get an image from https://imgur.com/a/Bqs9CV1
+2. upscale it 5x at https://lospec.com/pixel-art-scaler/
+3. add into code
