@@ -23,7 +23,10 @@ function loadTheme() {
     loaded = "space";
   }
 
-  // place code to change selection in menu here
+  Array.from(document.getElementById("theme-select").options).forEach(function(optionElement) {
+    optionElement.removeAttribute("selected");
+  });
+  document.getElementById("opt-"+loaded).setAttribute("selected", "");
   
   setTheme(loaded);
 }
@@ -35,11 +38,6 @@ function changeTheme() {
 
   setTheme(selected);
   alert("Theme is now set to " + selected);
-
-  Array.from(document.getElementById("theme-select").options).forEach(function(optionElement) {
-    optionElement.removeAttribute("selected");
-  });
-  document.getElementById("opt-"+selected).setAttribute("selected", "");
 }
 
 function setTheme(theme) {
