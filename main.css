@@ -48,8 +48,8 @@ html {
 }
 
 :root {
-  --accent: #ff64ff;
-  --background: url("/images/backgrounds/omori-space.png");
+  --accent: #000000;
+  --background: #000000;
 }
 
 body {
