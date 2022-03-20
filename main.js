@@ -43,5 +43,15 @@ function changeTheme() { // runs when theme is selected
 }
 
 function setTheme(theme) { // sets document theme to argument
-  document.getElementById("applied-theme").href = "/themes/"+theme+".css";
+  var colors = {
+    "space": "#ff64ff",
+    "cranes": "#e0d2c2",
+    "forest": "#a2e0dA",
+    "firecity": "#f96412",
+    "water": "#b7cde5",
+    "dark": "#dddddd",
+  }
+
+  document.querySelector(":root").style.setProperty("--accent", colors[theme])
+  document.body.style.backgroundImage = "url('/images/backgrounds/omori-"+theme+".png')";
 }
