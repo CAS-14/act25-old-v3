@@ -55,3 +55,5 @@ function setTheme(theme) { // sets document theme to argument
   rs.setProperty("--accent", colors[theme])
   rs.setProperty("--background", "url('/images/backgrounds/omori-"+theme+".png')")
 }
+
+loadTheme(); // run loadTheme() on page load
