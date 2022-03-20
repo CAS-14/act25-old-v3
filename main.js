@@ -16,30 +16,32 @@ function getIP(json) {
   }
 }
 
-function loadTheme() {
-  var loaded = localStorage.getItem("theme");
+function loadTheme() { // runs on page load
+  var loaded = localStorage.getItem("theme"); // attempts to get theme from local storage
 
   if (loaded == null) {
-    loaded = "space";
+    loaded = "space"; // sets to default theme if no local storage
+    localStorage.setItem("theme", "space")
   }
 
+  // selects selected theme from select dropdown menu
   Array.from(document.getElementById("theme-select").options).forEach(function(optionElement) {
     optionElement.removeAttribute("selected");
   });
   document.getElementById("opt-"+loaded).setAttribute("selected", "");
   
-  setTheme(loaded);
+  setTheme(loaded); // sets theme to loaded theme
 }
 
-function changeTheme() {
+function changeTheme() { // runs when theme is selected
   var menu = document.getElementById("theme-select")
-  var selected = menu.options[menu.selectedIndex].value;
-  localStorage.setItem("theme", selected);
+  var selected = menu.options[menu.selectedIndex].value; // get selected theme
+  localStorage.setItem("theme", selected); // set selected theme for storage
 
-  setTheme(selected);
-  alert("Theme is now set to " + selected);
+  setTheme(selected); // sets theme to selected theme
+  alert("Theme is now set to " + selected); // debug
 }
 
-function setTheme(theme) {
+function setTheme(theme) { // sets document theme to argument
   document.getElementById("applied-theme").href = "/themes/"+theme+".css";
 }
