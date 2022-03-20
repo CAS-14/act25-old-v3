@@ -16,7 +16,32 @@ function getIP(json) {
   }
 }
 
-function switchTheme(menu) {
-    var selected = menu.options[menu.selectedIndex].value;
-    alert('The option value is "' + selected);
+function loadTheme() {
+  var loaded = localStorage.getItem("theme");
+
+  if (loaded == null) {
+    loaded = "space";
+  }
+
+  // place code to change selection in menu here
+  
+  setTheme(loaded);
+}
+
+function changeTheme() {
+  var menu = document.getElementById("theme-select")
+  var selected = menu.options[menu.selectedIndex].value;
+  localStorage.setItem("theme", selected);
+
+  setTheme(selected);
+  alert("Theme is now set to " + selected);
+
+  Array.from(document.getElementById("theme-select").options).forEach(function(optionElement) {
+    optionElement.removeAttribute("selected");
+  });
+  document.getElementById("opt-"+selected).setAttribute("selected", "");
+}
+
+function setTheme(theme) {
+  document.getElementById("applied-theme").href = "/themes/"+theme+".css";
 }

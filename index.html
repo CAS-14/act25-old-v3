@@ -4,11 +4,11 @@
   <title>ACT25</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" id="switcher-id" href="">
+  <link rel="stylesheet" id="applied-theme" href="">
   <script src="main.js"></script>
   <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
-<body class="no-scroll">
+<body class="no-scroll" onload="loadTheme()">
   <div class="box" style="margin-top:40px; height:90vh">
     <div class="headbox">
       <span style="font-size: 64px; margin-right: 20px;"><b>ACT25</b></span>
@@ -35,13 +35,13 @@
 
     <span>
       <label for="theme">Select a site theme: </label>
-      <select name="theme" id="theme" onchange="switchTheme(this)">
-        <option value="space">space boyfriend</option>
-        <option value="construction">underwater cranes</option>
-        <option value="trees">dark forest</option>
-        <option value="firecity">burning city</option>
-        <option value="water">dark water</option>
-        <option value="dark">darkness</option>
+      <select name="theme" id="theme-select" onchange="changeTheme()">
+        <option value="space" id="opt-space">space</option>
+        <option value="cranes" id="opt-cranes">cranes</option>
+        <option value="forest" id="opt-forest">forest</option>
+        <option value="firecity" id="opt-firecity">firecity</option>
+        <option value="water" id="opt-water">water</option>
+        <option value="dark" id="opt-dark">darkness</option>
       </select>
     </span>
   </div>
