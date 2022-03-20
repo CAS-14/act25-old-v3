@@ -130,6 +130,7 @@ footer, header, hgroup, menu, nav, section {
   background-size: 100%;
   border: solid var(--accent);
   border-width: 2px;
+  position: relative;
 }
 
 .box .bottom span {
