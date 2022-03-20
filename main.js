@@ -25,16 +25,20 @@ function loadTheme() { // runs on page load
   }
 
   // selects selected theme from select dropdown menu
-  Array.from(document.getElementById("theme-select").options).forEach(function(optionElement) {
-    optionElement.removeAttribute("selected");
-  });
-  document.getElementById("opt-"+loaded).setAttribute("selected", "");
+  try {
+    Array.from(document.getElementById("theme-select").options).forEach(function(optionElement) {
+      optionElement.removeAttribute("selected");
+    });
+    document.getElementById("opt-"+loaded).setAttribute("selected", "");
+  } catch { 
+    console.log("Not on index.html (ignore this message)")
+  };
   
   setTheme(loaded); // sets theme to loaded theme
 }
 
 function changeTheme() { // runs when theme is selected
-  var menu = document.getElementById("theme-select")
+  var menu = document.getElementById("theme-select");
   var selected = menu.options[menu.selectedIndex].value; // get selected theme
   localStorage.setItem("theme", selected); // set selected theme for storage
 
