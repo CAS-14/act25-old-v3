@@ -15,3 +15,8 @@ function getIP(json) {
       window.location.replace("https://www.google.com");
   }
 }
+
+function switchTheme(menu) {
+    var selected = menu.options[menu.selectedIndex].value;
+    alert('The option value is "' + selected);
+}
