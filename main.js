@@ -65,6 +65,11 @@ function setTheme(theme) { // sets document theme to argument
   rs.setProperty("--background", "url('/images/backgrounds/omori-"+theme+".png')")
 }
 
+function randomTheme() {
+  localStorage.setItem("theme", null);
+  loadTheme();
+}
+
 // run loadTheme() on page load globally
 window.onload = function(){
   loadTheme();
