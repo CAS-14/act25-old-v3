@@ -20,8 +20,12 @@ function loadTheme() { // runs on page load
   var loaded = localStorage.getItem("theme"); // attempts to get theme from local storage
 
   if (loaded == null) {
-    loaded = "space"; // sets to default theme if no local storage
-    localStorage.setItem("theme", "space")
+    loaded = "space";
+    
+    var keys = Object.keys(object);
+    loaded = keys[Math.floor(keys.length * Math.random())];
+    
+    localStorage.setItem("theme", loaded)
   }
 
   // selects selected theme from select dropdown menu
