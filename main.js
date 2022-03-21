@@ -16,13 +16,23 @@ function getIP(json) {
   }
 }
 
+var colors = {
+  "space": "#ff64ff",
+  "cranes": "#e0d2c2",
+  "forest": "#a2e0dA",
+  "firecity": "#f96412",
+  "water": "#b7cde5",
+  "dark": "#dddddd",
+  "faraway": "#bbd93f",
+}
+
 function loadTheme() { // runs on page load
   var loaded = localStorage.getItem("theme"); // attempts to get theme from local storage
 
   if (loaded == null) {
     loaded = "space";
     
-    var keys = Object.keys(object);
+    var keys = Object.keys(colors);
     loaded = keys[Math.floor(keys.length * Math.random())];
     
     localStorage.setItem("theme", loaded)
@@ -50,16 +60,6 @@ function changeTheme() { // runs when theme is selected
 }
 
 function setTheme(theme) { // sets document theme to argument
-  var colors = {
-    "space": "#ff64ff",
-    "cranes": "#e0d2c2",
-    "forest": "#a2e0dA",
-    "firecity": "#f96412",
-    "water": "#b7cde5",
-    "dark": "#dddddd",
-    "faraway": "#bbd93f",
-  }
-
   rs = document.querySelector(":root").style
   rs.setProperty("--accent", colors[theme])
   rs.setProperty("--background", "url('/images/backgrounds/omori-"+theme+".png')")
