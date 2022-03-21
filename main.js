@@ -66,7 +66,7 @@ function setTheme(theme) { // sets document theme to argument
 }
 
 function randomTheme() {
-  localStorage.setItem("theme", null);
+  localStorage.removeItem("theme");
   loadTheme();
 }
 
