@@ -26,8 +26,9 @@ var colors = {
   "faraway": "#bbd93f",
 }
 
-function loadTheme() { // runs on page load
-  var loaded = localStorage.getItem("theme"); // attempts to get theme from local storage
+// runs automatically on page load
+function loadTheme() {
+  var loaded = localStorage.getItem("theme");
 
   if (loaded == null) {
     loaded = "space";
@@ -44,25 +45,31 @@ function loadTheme() { // runs on page load
       optionElement.removeAttribute("selected");
     });
     document.getElementById("opt-"+loaded).setAttribute("selected", "");
-  } catch { 
-    console.log("Not on index.html (ignore this message)")
-  };
+  } catch {} ;
   
-  setTheme(loaded); // sets theme to loaded theme
+  setTheme(loaded);
 }
 
-function changeTheme() { // runs when theme is selected
+// runs when theme is selected
+function changeTheme() { 
   var menu = document.getElementById("theme-select");
-  var selected = menu.options[menu.selectedIndex].value; // get selected theme
-  localStorage.setItem("theme", selected); // set selected theme for storage
+  var selected = menu.options[menu.selectedIndex].value;
+  localStorage.setItem("theme", selected);
 
-  setTheme(selected); // sets theme to selected theme
+  setTheme(selected);
 }
 
-function setTheme(theme) { // sets document theme to argument
+// applies document theme to given argument
+function setTheme(theme) { 
   rs = document.querySelector(":root").style
   rs.setProperty("--accent", colors[theme])
   rs.setProperty("--background", "url('/images/backgrounds/omori-"+theme+".png')")
+}
+
+// shortcut to load random theme
+function randomTheme() {
+  localStorage.removeItem("theme");
+  loadTheme();
 }
 
 // run loadTheme() on page load globally

@@ -31,6 +31,16 @@ time, mark, audio, video {
   background: var(--accent);
 }
 
+::selection {
+  background: var(--accent); /* WebKit/Blink Browsers */
+  color: black;
+}
+
+::-moz-selection {
+  background: var(--accent); /* Gecko Browsers */
+  color: black;
+}
+
 a, p, span {
   font-weight: 500;
   font-style: normal;
