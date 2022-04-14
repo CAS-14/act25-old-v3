@@ -33,8 +33,9 @@ function loadTheme() {
   if (loaded == null) {
     loaded = "space";
     
-    var keys = Object.keys(colors);
-    loaded = keys[Math.floor(keys.length * Math.random())];
+    // random feature: disabled
+    //var keys = Object.keys(colors);
+    //loaded = keys[Math.floor(keys.length * Math.random())];
     
     localStorage.setItem("theme", loaded)
   }
