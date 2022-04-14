@@ -6,6 +6,12 @@
     <script src="/main.js" onload="loadTheme()"></script>
     <link rel="stylesheet" href="/main.css">
     <script src="webhook.js"></script>
+    <style>
+        .tb {
+            width: 100%;
+            margin: 5px;
+        }
+    </style>
 </head>
 
 <body class="no-scroll">
@@ -21,12 +27,12 @@
         </div>
 
         <div id="webhook_sender">
-            <input type="text" id="webhook_url" class="full" style="width:100%"><br>
-            <textarea id="message" style="height:50px; width:100%; overflow:scroll"></textarea><br>
+            <input type="text" id="webhook_url" class="tb"><br>
+            <textarea id="message" class="tb" style="overflow:scroll"></textarea><br>
             <button type="button" onclick="send()">Send!</button>
             <button type="button" onclick="clear()">Clear</button>
-            <input type="checkbox" id="toggle_clear"> clear textbox on send<br>
-            <span id="error"></span>
+            <input type="checkbox" id="toggle_clear" checked> clear textbox on send<br>
+            <span id="output_txt"></span>
         </div>
     </div>
 </body>

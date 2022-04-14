@@ -1,28 +1,29 @@
-function send() {
-    var wh_url = document.getElementById("webhook_url").value;
-    var wh_msg = document.getElementById("message").value;
-    var clr = document.getElementById("toggle_clear").value;
+var whbox = document.getElementById("webhook_url");
+var msgbox = document.getElementById("message");
+var clearchk = document.getElementById("toggle_clear");
+var output = document.getElementById("output_txt");
 
+function send() {
     try {
         const request = new XMLHttpRequest();
-        request.open("POST", wh_url);
+        request.open("POST", whbox.value);
         request.setRequestHeader('Content-type', 'application/json');
         const params = {
-            content: wh_msg
+            content: msgbox.value
         }
         request.send(JSON.stringify(params));
 
-        if (clr) {
+        if (clearchk.value) {
             clear();
         }
 
-        document.getElementById("error").value = "Sent message!"
-    } catch (err) {
-        console.error(err);
-        document.getElementById("error").value = err;
+        output.value = "Sent message!"
+    } catch (error) {
+        console.error(error);
+        output.value = error;
     }
 }
 
 function clear() {
-    document.getElementById("message").value = "";
+    msgbox.value = "";
 }
