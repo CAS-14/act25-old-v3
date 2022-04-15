@@ -49,14 +49,14 @@ html {
   color: black;
 }
 
-a:not(.maintitle), p, span {
+a, p, span {
   font-weight: 500;
   font-style: normal;
   color: var(--c, --accent, white);
   vertical-align: baseline;
 }
 
-a:hover:not(.maintitle) {
+a:hover {
   background-color: var(--accent);
   color: black;
 }
