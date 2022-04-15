@@ -101,6 +101,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+input, button {
+  background-color: #333;
+}
+
 .no-scroll {
   overflow-y: hidden;
 }
