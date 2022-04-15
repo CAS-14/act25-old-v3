@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ACT25 - discord webhook sender</title>
+    <title>ACT25 - creations</title>
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <script src="/main.js" onload="loadTheme()"></script>
     <link rel="stylesheet" href="/main.css">
@@ -26,12 +26,9 @@
             <a href="/tools" onclick="select(this)" class="single">return to tools page</a>
         </div>
 
-        <h2>discord webhook tool</h2>
-        <p>With this tool, you can send messages individually using a Discord webhook URL.</p>
-
         <div id="webhook_sender">
-            <input type="text" id="webhook_url" class="tb" placeholder="your webhook url"><br>
-            <textarea id="message" class="tb" style="overflow:scroll" placeholder="message to send"></textarea>
+            <input type="text" id="webhook_url" class="tb"><br>
+            <textarea id="message" class="tb" style="overflow:scroll"></textarea>
             <button type="button" onclick="send()">Send!</button>
             <button type="button" onclick="clear()">Clear</button>
             <input type="checkbox" id="toggle_clear" checked> clear textbox on send<br>
