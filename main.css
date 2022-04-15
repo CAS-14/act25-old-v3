@@ -49,17 +49,18 @@ html {
   color: black;
 }
 
-a, p, span {
+a:not(.maintitle), p, span {
   font-weight: 500;
   font-style: normal;
   color: var(--c, --accent, white);
   vertical-align: baseline;
 }
 
-a:hover {
+a:hover:not(.maintitle) {
   background-color: var(--accent);
   color: black;
 }
+
 
 html {
   font-size: 100%;
