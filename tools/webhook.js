@@ -13,7 +13,7 @@ function send() {
         }
         request.send(JSON.stringify(params));
 
-        if (clearchk.value) {
+        if (clearchk.checked) {
             clear();
         }
 
