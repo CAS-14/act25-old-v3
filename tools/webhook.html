@@ -32,8 +32,8 @@
         <div id="webhook_sender">
             <input type="text" id="webhook_url" class="tb" placeholder="your webhook url"><br>
             <textarea id="message" class="tb" style="overflow:scroll" placeholder="message to send"></textarea>
-            <button type="button" onclick="send()">Send!</button>
-            <button type="button" onclick="clear()">Clear</button>
+            <button id="sendbtn" type="button" onclick="send();">Send!</button>
+            <button id="clrbtn" type="button" onclick="clear();">Clear</button>
             <input type="checkbox" id="toggle_clear" checked> clear textbox on send<br>
             <span id="output_txt"></span>
         </div>
