@@ -6,10 +6,10 @@ function send() {
     request.send(JSON.stringify(params));
 
     if (document.getElementById("toggle_clear").checked) {
-        clear();
+        clearbox();
     }
 }
 
-function clear() {
+function clearbox() {
     document.getElementById("message").value = "";
 }
