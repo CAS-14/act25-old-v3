@@ -1,29 +1,24 @@
-var whbox = document.getElementById("webhook_url");
-var msgbox = document.getElementById("message");
-var clearchk = document.getElementById("toggle_clear");
-var output = document.getElementById("output_txt");
-
 function send() {
     try {
         const request = new XMLHttpRequest();
-        request.open("POST", whbox.value);
+        request.open("POST", document.getElementById("webhook_url"));
         request.setRequestHeader('Content-type', 'application/json');
         const params = {
-            content: msgbox.value
+            content: document.getElementById("message")
         }
         request.send(JSON.stringify(params));
 
-        if (clearchk.checked) {
+        if (document.getElementById("toggle_clear").checked) {
             clear();
         }
 
         output.value = "Sent message!"
     } catch (error) {
         console.error(error);
-        output.value = error;
+        document.getElementById("output_txt").value = error;
     }
 }
 
 function clear() {
-    msgbox.value = "";
+    document.getElementById("message").value = "";
 }
