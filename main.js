@@ -32,11 +32,6 @@ function loadTheme() {
 
   if (loaded == null) {
     loaded = "space";
-    
-    // random feature: disabled
-    //var keys = Object.keys(colors);
-    //loaded = keys[Math.floor(keys.length * Math.random())];
-    
     localStorage.setItem("theme", loaded)
   }
 
@@ -69,7 +64,11 @@ function setTheme(theme) {
 
 // shortcut to load random theme
 function randomTheme() {
-  localStorage.removeItem("theme");
+  var keys = Object.keys(colors);
+  newTheme = keys[Math.floor(keys.length * Math.random())];
+    
+  localStorage.setItem("theme", newTheme)
+
   loadTheme();
 }
 
