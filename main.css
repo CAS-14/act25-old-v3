@@ -10,32 +10,37 @@
 }
 
 @font-face {
-  font-family: "Space Mono";
-  src: url("/font/space-mono/SpaceMono-Regular.ttf");
+  font-family: "Linux Libertine";
+  src: url("/font/linux-libertine/LinuxLibertine_R.otf");
 }
 
 @font-face {
-  font-family: "Space Mono";
-  src: url("/font/space-mono/SpaceMono-Bold.ttf");
+  font-family: "Linux Libertine";
+  src: url("/font/linux-libertine/LinuxLibertine_RB.otf");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "Space Mono";
-  src: url("/font/space-mono/SpaceMono-Italic.ttf");
+  font-family: "Linux Libertine";
+  src: url("/font/linux-libertine/LinuxLibertine_RI.otf");
   font-style: italic, oblique;
 }
 
 @font-face {
-  font-family: "Space Mono";
-  src: url("/font/space-mono/SpaceMono-BoldItalic.ttf");
+  font-family: "Linux Libertine";
+  src: url("/font/linux-libertine/LinuxLibertine_RBI.otf");
   font-weight: bold;
   font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Linux Libertine Mono";
+  src: url("/font/linux-libertine/LinuxLibertine_M.otf")
 }
 
 html {
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Linux Libertine", "Times New Roman", Times, serif;
   vertical-align: baseline;
   color: var(--accent)
 }
