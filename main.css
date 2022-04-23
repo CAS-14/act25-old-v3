@@ -11,31 +11,31 @@
 
 @font-face {
   font-family: "Linux Libertine";
-  src: url("/font/linux-libertine/LinuxLibertine_R.otf");
+  src: url("/font/linux-libertine/LinLibertine_R.otf");
 }
 
 @font-face {
   font-family: "Linux Libertine";
-  src: url("/font/linux-libertine/LinuxLibertine_RB.otf");
+  src: url("/font/linux-libertine/LinLibertine_RB.otf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Linux Libertine";
-  src: url("/font/linux-libertine/LinuxLibertine_RI.otf");
+  src: url("/font/linux-libertine/LinLibertine_RI.otf");
   font-style: italic, oblique;
 }
 
 @font-face {
   font-family: "Linux Libertine";
-  src: url("/font/linux-libertine/LinuxLibertine_RBI.otf");
+  src: url("/font/linux-libertine/LinLibertine_RBI.otf");
   font-weight: bold;
   font-style: italic, oblique;
 }
 
 @font-face {
   font-family: "Linux Libertine Mono";
-  src: url("/font/linux-libertine/LinuxLibertine_M.otf")
+  src: url("/font/linux-libertine/LinLibertine_M.otf")
 }
 
 html {
