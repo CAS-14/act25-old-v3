@@ -13,7 +13,7 @@
   font-family: "Linux Libertine";
   src: url("/font/linux-libertine/LinLibertine_R.otf");
 }
-
+/*
 @font-face {
   font-family: "Linux Libertine";
   src: url("/font/linux-libertine/LinLibertine_RB.otf");
@@ -32,6 +32,7 @@
   font-weight: bold;
   font-style: italic, oblique;
 }
+*/
 
 @font-face {
   font-family: "Linux Libertine Mono";
