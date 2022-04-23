@@ -72,8 +72,8 @@ html {
 }
 
 a, p, span {
-  /* font-weight: 500;
-  font-style: normal;*/
+  /* font-weight: 500;*/
+  font-style: normal;
   color: var(--c, --accent, white);
   vertical-align: baseline;
 }
