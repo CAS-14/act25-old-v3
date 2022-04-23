@@ -35,7 +35,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Space Mono", monospace, monospace;
+  font-family: "Times New Roman", Times, serif;
   vertical-align: baseline;
   color: var(--accent)
 }
