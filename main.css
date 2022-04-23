@@ -10,38 +10,25 @@
 }
 
 @font-face {
-  font-family: "Linux Libertine";
-  src: url("/font/linux-libertine/LinLibertine_R.otf");
+  font-family: Syne;
+  src: url("/font/syne/Syne-Regular.ttf");
 }
-/*
+
 @font-face {
-  font-family: "Linux Libertine";
-  src: url("/font/linux-libertine/LinLibertine_RB.otf");
+  font-family: Syne;
+  src: url("/font/syne/Syne-Bold.ttf");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "Linux Libertine";
-  src: url("/font/linux-libertine/LinLibertine_RI.otf");
-  font-style: italic, oblique;
-}
-
-@font-face {
-  font-family: "Linux Libertine";
-  src: url("/font/linux-libertine/LinLibertine_RBI.otf");
-  font-weight: bold;
-  font-style: italic, oblique;
-}
-*/
-
-@font-face {
-  font-family: "Linux Libertine Mono";
-  src: url("/font/linux-libertine/LinLibertine_M.otf")
+  font-family: Syne;
+  src: url("/font/syne/Syne-ExtraBold.ttf");
+  font-weight: 800;
 }
 
 html {
   box-sizing: border-box;
-  font-family: "Linux Libertine", "Times New Roman", Times, serif;
+  font-family: Syne, "Times New Roman", Times, serif;
   vertical-align: baseline;
   color: var(--accent)
 }
