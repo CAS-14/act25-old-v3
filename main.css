@@ -1,17 +1,41 @@
 @font-face {
-  font-family: comicMono;
+  font-family: "Comic Mono";
   src: url("/font/comic-mono/ComicMono.ttf");
 }
 
 @font-face {
-  font-family: comicMono;
+  font-family: "Comic Mono";
   src: url("/font/comic-mono/ComicMono-Bold.ttf");
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "Space Mono";
+  src: url("/font/space-mono/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/font/space-mono/SpaceMono-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/font/space-mono/SpaceMono-Italic.ttf");
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/font/space-mono/SpaceMono-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
 html {
   box-sizing: border-box;
-  font-family: comicMono, monospace, monospace;
+  font-family: "Space Mono", monospace, monospace;
   vertical-align: baseline;
   color: var(--accent)
 }
@@ -43,8 +67,8 @@ html {
 }
 
 a, p, span {
-  font-weight: 500;
-  font-style: normal;
+  /* font-weight: 500;
+  font-style: normal;*/
   color: var(--c, --accent, white);
   vertical-align: baseline;
 }
@@ -60,7 +84,7 @@ html {
 }
 
 :root {
-  --accent: #000000;
+  --accent: #ff64ff;
   --background: #000000;
 }
 
