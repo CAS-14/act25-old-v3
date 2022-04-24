@@ -59,15 +59,17 @@ function decipher() {
 
     var output = "";
     if (greatestIndex > -1) {
-        output += "Most likely result:\n\n"+results[greatestIndex];
+        output += "Most likely result:<br><br>"+results[greatestIndex];
         console.log(output);
         results.splice(greatestIndex, 1);
     } else {
         output += "No likely result could be found.";
     }
 
+    output += "<br><br>All other combinations:"
+
     for (let r = 0; r < results.length; r++) {
-        output += "\n\n" + results[r];
+        output += "<br><br>" + results[r];
     }
 
     document.getElementById("output_txt").innerHTML = output;
