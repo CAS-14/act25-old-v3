@@ -25,7 +25,8 @@ function decipher() {
 
     var allWords = "";
     var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", "http://www.mieliestronk.com/corncob_lowercase.txt", false);
+    // words list from http://www.mieliestronk.com/corncob_lowercase.txt
+    rawFile.open("GET", "http://www.act25.com/tools/corncob_lowercase.txt", false);
     rawFile.onreadystatechange = function () {
         if(rawFile.readyState === 4) {
             if(rawFile.status === 200 || rawFile.status == 0) {
