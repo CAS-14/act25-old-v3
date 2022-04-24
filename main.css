@@ -26,9 +26,26 @@
   font-weight: 800;
 }
 
+@font-face {
+  font-family: "Times New Roman Condensed";
+  src: url("/font/tnr-condensed/TNR-Condensed.otf");
+}
+
+@font-face {
+  font-family: "Times New Roman Condensed";
+  src: url("/font/tnr-condensed/TNR-Condensed-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Times New Roman Condensed";
+  src: url("/font/tnr-condensed/TNR-Condensed-Italic.otf");
+  font-style: italic, oblique;
+}
+
 html {
   box-sizing: border-box;
-  font-family: Syne, "Times New Roman", Times, serif;
+  font-family: "Times New Roman Condensed", "Times New Roman", Times, serif;
   vertical-align: baseline;
   color: var(--accent)
 }
