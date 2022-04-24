@@ -40,7 +40,7 @@
 @font-face {
   font-family: "Times New Roman Condensed";
   src: url("/font/tnr-condensed/TNR-Condensed-Italic.otf");
-  font-style: italic, oblique;
+  font-style: italic;
 }
 
 html {
