@@ -2,7 +2,6 @@ function decipher() {
     var text = document.getElementById("inputtext").value.toLowerCase();
 
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
-    var alphabetSplit = alphabet.split("");
 
     var results = [];
     for (let offset = 1; offset < 26; offset++) {
@@ -20,6 +19,7 @@ function decipher() {
             }
         }
 
+        console.log(comboSplit.join(""))
         results.push(comboSplit.join(""))
     }
 
@@ -35,6 +35,8 @@ function decipher() {
         }
     }
     rawFile.send(null);
+
+    console.log("allWords first 20 chars: "+allWords.substring(0,20));
 
     var greatestCount = -1;
     var greatestIndex = -1;
