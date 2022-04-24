@@ -1,7 +1,8 @@
 function decipher() {
     var text = document.getElementById("inputtext").value.toLowerCase();
-
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+    document.getElementById("output_txt").value = "Loading..."
 
     var results = [];
     for (let offset = 1; offset < 26; offset++) {
@@ -19,7 +20,7 @@ function decipher() {
             }
         }
 
-        console.log(comboSplit.join(""))
+        console.log("Determined combination: "+comboSplit.join(""))
         results.push(comboSplit.join(""))
     }
 
@@ -54,9 +55,12 @@ function decipher() {
         }
     }
 
+    console.log("greatestCount: "+greatestCount+"\ngreatestIndex: "+greatestIndex)
+
     var output = "";
     if (greatestIndex > -1) {
         output += "Most likely result:\n\n"+results[greatestIndex];
+        console.log(output);
         results.splice(greatestIndex, 1);
     } else {
         output += "No likely result could be found.";
