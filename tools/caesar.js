@@ -2,7 +2,7 @@ function decipher() {
     var text = document.getElementById("inputtext").value.toLowerCase();
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    document.getElementById("output_txt").value = "Loading..."
+    document.getElementById("output_txt").innerHTML = "Loading..."
 
     var results = [];
     for (let offset = 1; offset < 26; offset++) {
@@ -70,7 +70,7 @@ function decipher() {
         output += "\n\n" + results[r];
     }
 
-    document.getElementById("output_txt").value = output;
+    document.getElementById("output_txt").innerHTML = output;
 
     if (document.getElementById("toggle_clear").checked) {
         clearbox();
