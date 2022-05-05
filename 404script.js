@@ -1,4 +1,4 @@
-const konami_code = "ArrowUp,ArrowUp,ArrowDown,ArrowDown,ArrowLeft,ArrowRight,ArrowLeft,ArrowRight,B,A,Enter,";
+const konami_code = "ArrowUp,ArrowUp,ArrowDown,ArrowDown,ArrowLeft,ArrowRight,ArrowLeft,ArrowRight,b,a,Enter,";
 var keys_pressed = "";
 
 document.onkeydown = (e) => {
