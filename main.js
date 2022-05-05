@@ -24,6 +24,7 @@ var colors = {
   "water": "#b7cde5",
   "dark": "#dddddd",
   "faraway": "#bbd93f",
+  "doge": "#cec59a" // secret dog 2012
 }
 
 // runs automatically on page load
@@ -59,7 +60,7 @@ function changeTheme() {
 function setTheme(theme) { 
   rs = document.querySelector(":root").style
   rs.setProperty("--accent", colors[theme])
-  rs.setProperty("--background", "url('/images/backgrounds/omori-"+theme+".png')")
+  rs.setProperty("--background", "url('/images/backgrounds/theme-"+theme+".png')")
 }
 
 // shortcut to load random theme

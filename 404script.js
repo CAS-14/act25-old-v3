@@ -7,7 +7,8 @@ document.onkeydown = (e) => {
     console.log("Detected key: "+e.key)
 
     if (keys_pressed.includes(konami_code)) {
-        window.alert("you've done the funny");
+        localStorage.setItem("theme", "doge");
+        loadTheme();
         keys_pressed = "";
     }
 }
