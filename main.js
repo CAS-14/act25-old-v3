@@ -66,7 +66,7 @@ function setTheme(theme) {
 // shortcut to load random theme
 function randomTheme() {
   var keys = Object.keys(colors);
-  newTheme = keys[Math.floor(keys.length * Math.random())];
+  newTheme = keys[Math.floor((keys.length - 1) * Math.random())];
     
   localStorage.setItem("theme", newTheme)
 
