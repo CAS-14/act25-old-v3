@@ -45,10 +45,12 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Times New Roman Condensed", "Times New Roman", Times, serif;
+  font-family: Syne, Arial, Helvetica, sans-serif;
   vertical-align: baseline;
   color: var(--accent)
 }
+
+/* "Times New Roman Condensed", "Times New Roman", Times, serif */
 
 *, *:before, *:after {
   box-sizing: inherit;
