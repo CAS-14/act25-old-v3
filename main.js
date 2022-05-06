@@ -81,7 +81,7 @@ window.onload = function(){
 function toggleItem(id) {
   var item = document.getElementById(id);
     
-  if (item.style.display === "none") {
+  if (item.style.display === "none" || item.style.display === "") {
     item.style.display = "block";
   } else {
     item.style.display = "none";
