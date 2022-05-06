@@ -79,7 +79,7 @@ window.onload = function(){
 };
 
 function toggleItem(id) {
-  var item = getElementById(id);
+  var item = document.getElementById(id);
     
   if (item.style.display === "none") {
     item.style.display = "block";
