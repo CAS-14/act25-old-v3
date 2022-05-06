@@ -68,7 +68,7 @@ function randomTheme() {
   var keys = Object.keys(colors);
   newTheme = keys[Math.floor((keys.length - 1) * Math.random())];
     
-  localStorage.setItem("theme", newTheme)
+  localStorage.setItem("theme", newTheme);
 
   loadTheme();
 }
@@ -77,3 +77,13 @@ function randomTheme() {
 window.onload = function(){
   loadTheme();
 };
+
+function toggleItem(id) {
+  var item = getElementById(id);
+    
+  if (item.style.display === "none") {
+    item.style.display = "block";
+  } else {
+    item.style.display = "none";
+  }
+}

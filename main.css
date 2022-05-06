@@ -47,7 +47,7 @@ html {
   box-sizing: border-box;
   font-family: Syne, Arial, Helvetica, sans-serif;
   vertical-align: baseline;
-  color: var(--accent)
+  color: var(--accent);
 }
 
 /* "Times New Roman Condensed", "Times New Roman", Times, serif */
@@ -114,12 +114,6 @@ body {
 
 ul {
 	list-style: circle;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
 }
 
 input, button, textarea, select {
@@ -218,4 +212,8 @@ span.toptitle {
   font-size: 35pt; 
   font-weight: 800;
   margin-right: 20px;
+}
+
+div.collapsible {
+  display: none;
 }
