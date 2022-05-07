@@ -87,3 +87,7 @@ function toggleItem(id) {
     item.style.display = "none";
   }
 }
+
+function goHome() {
+  window.location.href = "https://www.act25.com/"
+}

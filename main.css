@@ -208,10 +208,14 @@ input, button, textarea, select {
   margin: 0px;
 }
 
-span.toptitle {
+.toptitle span {
   font-size: 35pt; 
   font-weight: 800;
   margin-right: 20px;
+}
+
+.toptitle span:hover {
+  text-decoration: underline;
 }
 
 .collapsible {
