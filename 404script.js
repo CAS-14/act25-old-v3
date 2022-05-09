@@ -10,5 +10,7 @@ document.onkeydown = (e) => {
         localStorage.setItem("theme", "doge");
         loadTheme();
         keys_pressed = "";
+
+        window.alert("You have activated Doge mode!")
     }
 }
