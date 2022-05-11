@@ -23,8 +23,9 @@ var colors = {
   "firecity": "#f96412",
   "water": "#b7cde5",
   "dark": "#dddddd",
-  "faraway": "#bbd93f",
-  "doge": "#cec59a" // secret dog 2012
+  "faraway": "#bbd93f", // 7 public omori themes
+  "doge": "#cec59a", // secret dog 2012
+  "betaspace": "#ff64ff" // coming soon - ai generated novelai sigurd
 }
 
 // runs automatically on page load
@@ -66,7 +67,7 @@ function setTheme(theme) {
 // shortcut to load random theme
 function randomTheme() {
   var keys = Object.keys(colors);
-  newTheme = keys[Math.floor((keys.length - 1) * Math.random())];
+  newTheme = keys[Math.floor((7) * Math.random())];
     
   localStorage.setItem("theme", newTheme);
 
