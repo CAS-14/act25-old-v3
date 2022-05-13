@@ -15,7 +15,10 @@ var colors = {
   "dark": "#dddddd",
   "faraway": "#bbd93f", // 7 public omori themes
   "doge": "#cec59a", // secret dog 2012
-  "betaspace": "#ff64ff" // coming soon - ai generated novelai sigurd
+  "betaspace": "#ff64ff", // coming soon - ai generated novelai sigurd
+  "betaspace-lo": "#ff64ff",
+  "betastars-lo": "#f6f5f2",
+  "betastars": "#f6f5f2"
 }
 
 // runs automatically on page load
