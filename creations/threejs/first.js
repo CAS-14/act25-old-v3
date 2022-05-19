@@ -1,6 +1,7 @@
+var container = document.getElementById("container")
+
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
-var container = document.getElementById("container")
 
 var renderer = new THREE.WebGLRenderer();
 renderer.setSize(container.clientWidth, container.clientHeight);
