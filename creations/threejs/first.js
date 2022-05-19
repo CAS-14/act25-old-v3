@@ -1,10 +1,13 @@
 var container = document.getElementById("container")
+var width = container.clientWidth;
+var height = container.clientHeight;
+if (height == 0) height == window.innerHeight;
 
 var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+var camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 
 var renderer = new THREE.WebGLRenderer();
-renderer.setSize(container.clientWidth, container.clientHeight);
+renderer.setSize(width, height);
 container.appendChild(renderer.domElement);
 
 var geometry = new THREE.BoxGeometry(1, 1, 1);
