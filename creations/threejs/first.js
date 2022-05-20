@@ -1,7 +1,7 @@
 var container = document.getElementById("container")
 var width = container.clientWidth;
 var height = container.clientHeight;
-if (height == 0) height == window.innerHeight;
+if (height == 0) height = window.innerHeight;
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
