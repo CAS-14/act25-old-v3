@@ -192,7 +192,18 @@ input, button, textarea, select {
   background-size: 100%;
   border: solid var(--accent);
   border-width: 2px;
-  align-items: center;
+  text-align: center;
+}
+
+.boxfill {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-size: 100%;
+  border: solid var(--accent);
+  border-width: 2px;
 }
 
 /* centered text */
