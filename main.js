@@ -26,7 +26,7 @@ var public_theme_count = 2
 function loadTheme() {
   var loaded = localStorage.getItem("theme");
 
-  if (!(colors.includes(loaded))) {
+  if (!(themes.includes(loaded))) {
     loaded = themes[0];
     localStorage.setItem("theme", loaded)
   }
