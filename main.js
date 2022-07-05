@@ -7,26 +7,27 @@ function select(a) { // used back when the website was one page and responsive
 }
 
 var colors = {
-  "space": "#ff64ff",
-  "cranes": "#e0d2c2",
-  "forest": "#a2e0dA",
-  "firecity": "#f96412",
-  "water": "#b7cde5",
-  "dark": "#dddddd",
-  "faraway": "#bbd93f", // 7 public omori themes
+  "new-space": "#ff64ff", // coming soon - ai generated novelai sigurd
+  "new-stars": "#f6f5f2",
+  "omori-space": "#ff64ff",
+  "omori-cranes": "#e0d2c2",
+  "omori-forest": "#a2e0dA",
+  "omori-firecity": "#f96412",
+  "omori-water": "#b7cde5",
+  "omori-dark": "#dddddd",
+  "omori-faraway": "#bbd93f",
   "doge": "#cec59a", // secret dog 2012
-  "betaspace": "#ff64ff", // coming soon - ai generated novelai sigurd
-  "betaspace-lo": "#ff64ff",
-  "betastars-lo": "#f6f5f2",
-  "betastars": "#f6f5f2"
 }
+
+var themes = Object.keys(colors);
+var public_theme_count = 2
 
 // runs automatically on page load
 function loadTheme() {
   var loaded = localStorage.getItem("theme");
 
-  if (loaded == null) {
-    loaded = "space";
+  if (!(colors.includes(loaded))) {
+    loaded = themes[0];
     localStorage.setItem("theme", loaded)
   }
 
@@ -42,7 +43,7 @@ function loadTheme() {
 }
 
 // runs when theme is selected
-function changeTheme() { 
+function selectTheme() { 
   var menu = document.getElementById("theme-select");
   var selected = menu.options[menu.selectedIndex].value;
   localStorage.setItem("theme", selected);
@@ -54,14 +55,13 @@ function changeTheme() {
 function setTheme(theme) { 
   rs = document.querySelector(":root").style
   rs.setProperty("--accent", colors[theme])
-  rs.setProperty("--background", "url('/images/backgrounds/theme-"+theme+".png')")
+  rs.setProperty("--background", "url('/images/themes/"+theme+".png')")
 }
 
 // shortcut to load random theme
 function randomTheme() {
-  var keys = Object.keys(colors);
-  newTheme = keys[Math.floor((7) * Math.random())];
-    
+  newTheme = themes[Math.floor((public_theme_count) * Math.random())];
+
   localStorage.setItem("theme", newTheme);
 
   loadTheme();
