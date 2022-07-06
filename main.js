@@ -9,6 +9,8 @@ function select(a) { // used back when the website was one page and responsive
 var colors = {
   "new-space": "#ff64ff", // coming soon - ai generated novelai sigurd
   "new-stars": "#f6f5f2",
+  "new-neon": "#85aae7",
+  "new-fire-ice": "#f02c02",
   "omori-space": "#ff64ff",
   "omori-cranes": "#e0d2c2",
   "omori-forest": "#a2e0dA",
