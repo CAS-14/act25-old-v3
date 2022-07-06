@@ -60,7 +60,12 @@ function setTheme(theme) {
 
 // shortcut to load random theme
 function randomTheme() {
-  newTheme = themes[Math.floor((public_theme_count) * Math.random())];
+  currentTheme = localStorage.getItem("theme")
+
+  newTheme = currentTheme
+  while (newTheme == currentTheme) {
+    newTheme = themes[Math.floor((public_theme_count) * Math.random())];
+  }
 
   localStorage.setItem("theme", newTheme);
 
