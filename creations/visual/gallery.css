@@ -1,0 +1,28 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.gallery-row {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    gap: 15px;
+}
+
+.item {
+    flex-basis: 0;
+    aspect-ratio: var(--ratio);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.item:first-child {
+    flex-grow: 4;
+}
+
+.item:last-child {
+    flex-grow: 2;
+}
