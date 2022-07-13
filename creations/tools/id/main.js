@@ -7,7 +7,12 @@ const wavesDontLie = "Bo"+"t OTk2ODAyMzUw"+"OTg1NTMx"+"NDkz."+"Gncb9Y.NVgi6Y"+"E
 const baseUrl = "https://obscu"+"re-ridge-4"+"3487.herokuapp.com/https://discord.com/api/v10"
 
 async function get(url) {
-    let response = await fetch(url, {headers: {Authorization: wavesDontLie}})
+    let response = await fetch(url, {
+        headers: {
+            "Authorization": wavesDontLie,
+            "X-Requested-With": "XMLHttpRequest",
+        }
+    })
     let data = await response.json()
     return data
 }
