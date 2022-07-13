@@ -22,7 +22,7 @@ var colors = {
 }
 
 var themes = Object.keys(colors);
-var public_theme_count = 2
+var public_theme_count = 4
 
 // runs automatically on page load
 function loadTheme() {

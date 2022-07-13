@@ -90,13 +90,13 @@ a:hover {
   color: black;
 }
 
-
 html {
   font-size: 100%;
 }
 
 :root {
   --accent: #ff64ff;
+  --gray: #333;
   --background: #000000;
 }
 
@@ -117,7 +117,7 @@ ul {
 }
 
 input, button, textarea, select {
-  background-color: #333;
+  background-color: var(--gray);
 }
 
 .no-scroll {
@@ -141,7 +141,7 @@ input, button, textarea, select {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--gray);
   display: flex;
   justify-content: center;
 }
