@@ -38,10 +38,8 @@
         <p>This tool can be used to look up Discord IDs, inspired by <a href="https://discord.id" target="_blank">discord.id</a>. This works with any ID, including user ID, server ID, message ID, or channel ID. It will show date/time of creation, user names and profile pics, and any other information that can be found.</p>
 
         <div id="id_lookup">
-            <textarea id="inputtext" class="tb" style="overflow:scroll" placeholder="caesar cipher text"></textarea>
-            <button type="button" onclick="decipher();">Decipher</button>
-            <button type="button" onclick="clearbox();">Clear</button>
-            <input type="checkbox" id="toggle_clear" checked> clear textbox on decipher<br>
+            <button type="button" onclick="lookup();">Lookup</button>
+            <input type="text" id="discord_id" class="" placeholder="discord id">
             <p id="output_txt"> </p>
         </div>
     </div>
