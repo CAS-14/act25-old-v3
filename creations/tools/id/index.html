@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ACT25 - discord id lookup</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <script src="/main.js" onload="loadTheme()"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <meta content="ACT25 - Discord ID Lookup" property="og:title" />
+    <meta content="You can use this tool to look up Discord IDs." property="og:description" />
+    <meta content="." property="og:url" />
+    <meta content="/images/brand/triangle-logo.png" property="og:image" />
+    <link rel="stylesheet" href="/main.css">
+    <script src="main.js"></script>
+    <style>
+        .tb {
+            width: 100%;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body class="no-scroll">
+    <div class="box scroll-override">
+        <div class="headbox">
+            <span class="toptitle">act25</span>
+            <img src=/images/brand/triangle-logo.png width=72 height=72>
+        </div>
+        <h2 style="margin-top: 0px;">CAS's website</h2>
+
+        <div class="topnav">
+            <a href="/creations" onclick="select(this)" class="single">return to tools page</a>
+        </div>
+
+        <h2>discord id lookup</h2>
+        <p>This tool can be used to look up Discord IDs, inspired by <a href="https://discord.id" target="_blank">discord.id</a>. This works with any ID, including user ID, server ID, message ID, or channel ID. It will show date/time of creation, user names and profile pics, and any other information that can be found.</p>
+
+        <div id="id_lookup">
+            <textarea id="inputtext" class="tb" style="overflow:scroll" placeholder="caesar cipher text"></textarea>
+            <button type="button" onclick="decipher();">Decipher</button>
+            <button type="button" onclick="clearbox();">Clear</button>
+            <input type="checkbox" id="toggle_clear" checked> clear textbox on decipher<br>
+            <p id="output_txt"> </p>
+        </div>
+    </div>
+</body>
+
+</html>
