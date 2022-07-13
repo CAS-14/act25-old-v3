@@ -48,6 +48,7 @@ html {
   font-family: Syne, Arial, Helvetica, sans-serif;
   vertical-align: baseline;
   color: var(--accent);
+  height: 100%;
 }
 
 /* "Times New Roman Condensed", "Times New Roman", Times, serif */
@@ -106,10 +107,10 @@ body {
       rgba(0, 0, 0, 0.2), 
       rgba(0, 0, 0, 0.2)
     ),
-    var(--background),
-    no-repeat;
-  
+    var(--background);
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 100%
 }
 
 ul {
