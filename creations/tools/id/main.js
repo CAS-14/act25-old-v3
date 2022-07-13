@@ -4,7 +4,7 @@ function output(text) {
 
 // NOTE: I am completely aware of the implications of having my token publically available. However, this bot is not in any servers and the only use of it is accessing the Discord API. So nice find, I guess?
 const wavesDontLie = "Bo"+"t OTk2ODAyMzUw"+"OTg1NTMx"+"NDkz."+"Gncb9Y.NVgi6Y"+"EODhupT3j21lSRX"+"Qiv2Hp9"+"jO6GypylBc"
-const baseUrl = "https://cors-anywhere.herokuapp.com/https://discord.com/api/v10"
+const baseUrl = "https://obscu"+"re-ridge-4"+"3487.herokuapp.com/https://discord.com/api/v10"
 
 async function get(url) {
     let response = await fetch(url, {headers: {Authorization: wavesDontLie}})
