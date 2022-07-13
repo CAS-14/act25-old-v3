@@ -57,7 +57,7 @@ function selectTheme() {
 function setTheme(theme) { 
   rs = document.querySelector(":root").style
   rs.setProperty("--accent", colors[theme])
-  rs.setProperty("--background", "url('/images/themes/"+theme+".png')")
+  rs.setProperty("--background", "url('https://media.act25.com/themes/"+theme+".png')")
 }
 
 // shortcut to load random theme
