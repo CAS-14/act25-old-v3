@@ -1,28 +1,31 @@
-.gallery {
+div.gallery {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 }
 
-.gallery-row {
+div.gallery-row {
     display: flex;
     flex-direction: row;
-    background-color: red;
-    gap: 15px;
+    column-gap: 15px;
+    scroll-margin-bottom: 15px;
 }
 
-.item {
-    flex-basis: 0;
-    aspect-ratio: var(--ratio);
-    align-items: center;
-    justify-content: center;
-    position: relative;
+div.gallery-row > div {
+    flex: 1;
+    width: auto;
+    height: auto;
+    background-color: var(--accent);
+    border: solid 2px var(--accent);
 }
 
-.item:first-child {
-    flex-grow: 4;
+div.gallery-row > * > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
 }
 
-.item:last-child {
-    flex-grow: 2;
+div.gallery-row > * > img.expand {
+    aspect-ratio: auto;
 }
