@@ -4,7 +4,6 @@ var keysPressed = "";
 document.onkeydown = (e) => {
     e = e || window.event;
     keysPressed = keysPressed + e.key + ",";
-    console.log("Detected key: "+e.key)
 
     if (keysPressed.includes(konamiCode)) {
         localStorage.setItem("theme", "doge");
