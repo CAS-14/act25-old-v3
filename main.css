@@ -98,7 +98,7 @@ html {
 :root {
   --accent: #ff64ff;
   --gray: #333;
-  --background: #000000;
+  --background: url("https://media.act25.com/themes/new-space.png")
 }
 
 body {
