@@ -1,14 +1,5 @@
 var current = "i'm a dog"
 
-window.onload = function () {
-    var images = document.getElementsByTagName('img');
-    for (var i = 0; i < images.length; i++) {
-        images[i].onclick = function () {
-            expand.call(this, this)
-        }
-    }
-}
-
 function expand(image) {
     try { current.remove() } catch { console.log("didn't hide thing") }
 
