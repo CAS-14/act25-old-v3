@@ -12,34 +12,22 @@ window.onload = function () {
 function expand(image) {
     try { current.remove() } catch { console.log("didn't hide thing") }
 
-    if (image.id == "expanded") {
+    let gallery = image.parentNode.parentNode.parentNode
+    let nextRow = image.parentNode.parentNode.nextSibling
 
-        image.id = ""
+    let expandedImage = document.createElement("img")
+    expandedImage.classList.add("expand")
+    expandedImage.src = image.src
+    expandedImage.onclick = function () { current.remove() }
 
-    } else {
+    let expandedItem = document.createElement("div")
+    expandedItem.appendChild(expandedImage)
 
-        let gallery = image.parentNode.parentNode.parentNode
-        let nextRow = image.parentNode.parentNode.nextSibling
+    let expandedRow = document.createElement("div")
+    expandedRow.classList.add("gallery-row")
+    expandedRow.appendChild(expandedItem)
 
-        let expandedImage = document.createElement("img")
-        expandedImage.classList.add("expand")
-        expandedImage.src = image.src
-        expandedImage.onclick = function () { 
-            current.remove() 
-            document.getElementById("expanded").id = ""
-        }
-
-        let expandedItem = document.createElement("div")
-        expandedItem.appendChild(expandedImage)
-
-        let expandedRow = document.createElement("div")
-        expandedRow.classList.add("gallery-row")
-        expandedRow.appendChild(expandedItem)
-
-        gallery.insertBefore(expandedRow, nextRow)
-        expandedRow.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
-        image.id = "expanded"
-        current = expandedRow
-        
-    }
+    gallery.insertBefore(expandedRow, nextRow)
+    expandedRow.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+    current = expandedRow
 }
