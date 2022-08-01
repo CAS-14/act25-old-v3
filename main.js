@@ -22,7 +22,7 @@ var colors = {
 }
 
 var themes = Object.keys(colors);
-var public_theme_count = 2
+var public_theme_count = 4
 
 // runs automatically on page load
 function loadTheme() {
@@ -57,7 +57,7 @@ function selectTheme() {
 function setTheme(theme) { 
   rs = document.querySelector(":root").style
   rs.setProperty("--accent", colors[theme])
-  rs.setProperty("--background", "url('/images/themes/"+theme+".png')")
+  rs.setProperty("--background", "url('https://media.act25.com/themes/"+theme+".png')")
 }
 
 // shortcut to load random theme

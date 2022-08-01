@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACT25 - digital art</title>
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+  <script src="/main.js" onload="loadTheme()"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
+  <meta content="ACT25 - Visual Art" property="og:title" />
+  <meta content="Here is where I put my digital visual art, enjoy." property="og:description" />
+  <meta content="." property="og:url" />
+  <meta content="/images/triangle-logo.png" property="og:image" />
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallery.js"></script>
+</head>
+<body class="no-scroll">
+  <div class="box scroll-override" >
+    <div class="headbox">
+      <span class="toptitle">act25</span>
+      <img src=/images/triangle-logo.png width=72 height=72>
+    </div>
+    <h2 style="margin-top: 0px;">CAS's website</h2>
+    <div class="topnav">
+      <a href="/creations" onclick="select(this)" class="single">return to main page</a>
+    </div>
+    <h2>digital art</h2>
+    <p>Here are some things I've made. You can click any image to expand it, and click the expanded version to collapse it. Sorry for the long load times, I still need to fix that.</p>
+    <div class="gallery" id="gallery">
+      <div class="gallery-row">
+        <div><img src="https://media.act25.com/art/dv/lmt512.gif" title="drain gang visuals" onclick="expand(this)"></div>
+        <div><img src="https://media.act25.com/art/dv/castle.gif" title="lovestory castle" onclick="expand(this)"></div>
+        <div><img src="https://media.act25.com/art/dv/cas.gif" title="my self portrait" onclick="expand(this)"></div>
+      </div>
+      <div class="gallery-row">
+        <div><img src="https://media.act25.com/art/dv/sakura.gif" title="sakura banner" onclick="expand(this)"></div>
+        <div><img src="https://media.act25.com/art/dv/residence.gif" title="residence" onclick="expand(this)"></div>
+        <div><img src="https://media.act25.com/art/dv/vhs_sakura.gif" title="sakura banner, vhs" onclick="expand(this)"></div>
+      </div>
+      <div class="gallery-row">
+        <div><img src="https://media.act25.com/art/dv/pinks_line.gif" title="pink sky outlines" onclick="expand(this)"></div>
+        <div><img src="https://media.act25.com/art/dv/pinks_drain.gif" title="gray sky slime?" onclick="expand(this)"></div>
+        <div><img src="https://media.act25.com/art/dv/acidjourney.gif" title="acid journey" onclick="expand(this)"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

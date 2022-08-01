@@ -48,6 +48,7 @@ html {
   font-family: Syne, Arial, Helvetica, sans-serif;
   vertical-align: baseline;
   color: var(--accent);
+  height: 100%;
 }
 
 /* "Times New Roman Condensed", "Times New Roman", Times, serif */
@@ -90,14 +91,14 @@ a:hover {
   color: black;
 }
 
-
 html {
   font-size: 100%;
 }
 
 :root {
   --accent: #ff64ff;
-  --background: #000000;
+  --gray: #333;
+  --background: url("https://media.act25.com/themes/new-space.png")
 }
 
 body {
@@ -106,10 +107,10 @@ body {
       rgba(0, 0, 0, 0.2), 
       rgba(0, 0, 0, 0.2)
     ),
-    var(--background),
-    no-repeat;
-  
+    var(--background);
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 100%
 }
 
 ul {
@@ -117,7 +118,7 @@ ul {
 }
 
 input, button, textarea, select {
-  background-color: #333;
+  background-color: var(--gray);
 }
 
 .no-scroll {
@@ -141,7 +142,7 @@ input, button, textarea, select {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--gray);
   display: flex;
   justify-content: center;
 }
@@ -224,11 +225,6 @@ span.toptitle {
   font-weight: 800;
   margin-right: 20px;
 }
-/*
-.toptitle span:hover {
-  text-decoration: underline;
-}
-*/
 
 .collapsible {
   display: none;
