@@ -47,7 +47,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: Inter, Syne, Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   vertical-align: baseline;
   color: var(--accent);
   height: 100%;
