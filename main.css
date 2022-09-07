@@ -53,6 +53,12 @@ html {
   height: 100%;
 }
 
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
 /* "Times New Roman Condensed", "Times New Roman", Times, serif */
 
 *, *:before, *:after {
