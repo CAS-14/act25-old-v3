@@ -43,20 +43,12 @@
   font-style: italic;
 }
 
-@import url('https://rsms.me/inter/inter.css');
-
 html {
   box-sizing: border-box;
   font-family: Syne, Arial, Helvetica, sans-serif;
   vertical-align: baseline;
   color: var(--accent);
   height: 100%;
-}
-
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter var', sans-serif;
-  }
 }
 
 /* "Times New Roman Condensed", "Times New Roman", Times, serif */
